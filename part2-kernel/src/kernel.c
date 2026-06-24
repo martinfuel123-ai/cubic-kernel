@@ -54,7 +54,7 @@ void kernel_main(void) {
     set_color(0x0E);
     print_str("  Group Members:\n");
     set_color(0x07);
-    print_str("    * Part 1 (Cubic Distro)  : Jose Martin\n");
+    print_str("    * Part 1 (Cubic Distro)  : Rafael Patin\n");
     print_str("    * Part 2 (Kernel 64-bit) : Jose Martin\n");
     print_str("    * Part 3 (Black Hat Bash): Jose Martin\n\n");
 
