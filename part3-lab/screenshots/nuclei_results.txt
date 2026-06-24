@@ -1,0 +1,44 @@
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v3.9.0
+
+		projectdiscovery.io
+
+[[34mINF[0m] nuclei-templates are not installed, installing...
+[[34mINF[0m] Successfully installed nuclei-templates at /root/nuclei-templates
+[[31mWRN[0m] Found 17 templates with runtime error (use -validate flag for further examination)
+[[34mINF[0m] Current nuclei version: v3.9.0 ([92mlatest[0m)
+[[34mINF[0m] Current nuclei-templates version: v10.4.5 ([92mlatest[0m)
+[[34mINF[0m] New templates added in latest release: 86
+[[34mINF[0m] Templates loaded for current scan: 6287
+[[34mINF[0m] Executing 6286 signed templates from projectdiscovery/nuclei-templates
+[[34mINF[0m] Targets loaded for current scan: 4
+[[34mINF[0m] Templates clustered: 361 (Reduced 1220 Requests)
+[[34mINF[0m] Using Interactsh Server: oast.live
+[[34mINF[0m] Skipped 172.16.10.11:43800 from target list as found unresponsive permanently: cause="port closed or filtered" address=172.16.10.11:43800 chain="connection refused; got err while executing http://172.16.10.11:43800/static-files/mOPjSWp.txt"
+[[92mftp-anonymous-login[0m] [[94mtcp[0m] [[33mmedium[0m] 172.16.10.11:21
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"123456"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"password"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"123456"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"pass1"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"guest"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"toor"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"default"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"pass1"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"stingray"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"guest"[0m,[93musername[0m=[93m"ftp"[0m]
+[[34mINF[0m] Skipped 172.16.10.11:4040 from target list as found unresponsive permanently: cause="port closed or filtered" address=172.16.10.11:4040 chain="connection refused; got err while executing https://172.16.10.11:4040/jobs/?\"'><script>alert(document.domain)</script>"
+[[92mftp-anonymous-login[0m] [[94mtcp[0m] [[33mmedium[0m] 172.16.10.11:21
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"toor"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"default"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"password"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"stingray"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"nas"[0m,[93musername[0m=[93m"ftp"[0m]
+[[92mftp-weak-credentials[0m] [[94mtcp[0m] [[38;5;208mhigh[0m] 172.16.10.11:21 [[93mpassword[0m=[93m"nas"[0m,[93musername[0m=[93m"ftp"[0m]
+[[34mINF[0m] Skipped 172.16.10.12:4040 from target list as found unresponsive permanently: cause="port closed or filtered" address=172.16.10.12:4040 chain="connection refused; got err while executing https://172.16.10.12:4040/jobs/?\"'><script>alert(document.domain)</script>"
+[[34mINF[0m] Skipped 172.16.10.10:4040 from target list as found unresponsive permanently: cause="port closed or filtered" address=172.16.10.10:4040 chain="connection refused; got err while executing https://172.16.10.10:4040/jobs/?\"'><script>alert(document.domain)</script>"
+[[92mwp-install[0m] [[94mhttp[0m] [[31mcritical[0m] http://172.16.10.12:80/wp-admin/install.php?step=1
+[[34mINF[0m] Scan completed in 4m. 19 matches found.

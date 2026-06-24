@@ -1,0 +1,3 @@
+=== Networks ===
+public: 172.16.10.0/24
+corporate: 10.1.0.0/24
