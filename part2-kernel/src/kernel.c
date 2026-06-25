@@ -52,11 +52,10 @@ void kernel_main(void) {
     print_str("  Instructor: Ing. Jonathan E. Tito O., MSc.\n\n");
 
     set_color(0x0E);
-    print_str("  Group Members:\n");
+    print_str("  Student:\n");
     set_color(0x07);
-    print_str("    * Part 1 (Cubic Distro)  : Rafael Patin\n");
-    print_str("    * Part 2 (Kernel 64-bit) : Jose Martin\n");
-    print_str("    * Part 3 (Black Hat Bash): Jose Martin\n\n");
+    print_str("    Jose Martin\n");
+    print_str("    Parts 1, 2 & 3\n\n");
 
     set_color(0x0A);
     print_str("  System Information:\n");

@@ -1,0 +1,31 @@
+==================================================
+   CUBIC OS - Modification Evidence
+   (Extracted directly from ISO squashfs)
+==================================================
+
+--- [1] Neovim ---
+NVIM v0.9.5
+Build type: Release
+
+--- [2] Git ---
+git version 2.43.0
+
+--- [3] htop ---
+htop 3.3.0
+
+--- [4] curl ---
+curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3
+
+--- [5] Shell Aliases (/etc/skel/.bash_aliases) ---
+alias ll='ls -la'
+alias la='ls -A'
+alias l='ls -CF'
+alias update='sudo apt-get update && sudo apt-get upgrade -y'
+alias nv='nvim'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+
+--- [6] Welcome Banner (/etc/skel/.bashrc) ---
+echo "Bienvenido a CUBIC OS - UIDE 2026"
+echo "Integrative Project - Build, Boot, and Attack"

@@ -1,2 +1,6 @@
 *.o
 isodir/
+*.iso
+*.bin
+output/
+part3-lab/Black-Hat-Bash/

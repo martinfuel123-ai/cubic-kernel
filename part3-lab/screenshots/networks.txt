@@ -1,3 +1,6 @@
 === Networks ===
 public: 172.16.10.0/24
 corporate: 10.1.0.0/24
+=== Containers per network ===
+public containers: p-jumpbox-01 p-web-02 p-ftp-01 p-web-01 
+corporate containers: c-db-01 p-jumpbox-01 p-web-02 c-redis-01 c-db-02 c-backup-01 

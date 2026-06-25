@@ -1,10 +1,21 @@
-=== docker ps ===
-p-web-02                     Up 25 minutes
-p-jumpbox-01                 Up 25 minutes
-p-web-01                     Up 25 minutes
-p-ftp-01                     Up 25 minutes
-c-backup-01                  Up 25 minutes
-c-redis-01                   Up 25 minutes
-c-db-02                      Up 25 minutes
-c-db-01                      Up 25 minutes
-fisio-whatsapp-gateway       Up 2 weeks
+All 8 containers UP
+NAMES                        STATUS
+p-web-02                     Up 3 hours
+p-jumpbox-01                 Up 3 hours
+p-web-01                     Up 3 hours
+p-ftp-01                     Up 3 hours
+c-backup-01                  Up 3 hours
+c-redis-01                   Up 3 hours
+c-db-02                      Up 3 hours
+c-db-01                      Up 3 hours
+vitark-postgres              Up 2 weeks
+
+=== IP Addresses ===
+p-jumpbox-01 | public=172.16.10.13 | corporate=10.1.0.12
+p-web-01 | public=172.16.10.10 | corporate=
+p-web-02 | public=172.16.10.12 | corporate=10.1.0.11
+p-ftp-01 | public=172.16.10.11 | corporate=
+c-backup-01 | public= | corporate=10.1.0.13
+c-redis-01 | public= | corporate=10.1.0.14
+c-db-01 | public= | corporate=10.1.0.15
+c-db-02 | public= | corporate=10.1.0.16
