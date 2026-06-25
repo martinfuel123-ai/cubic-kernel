@@ -22,16 +22,28 @@
 ## List of Modifications and Justifications
 
 1. Software Replacement: Celluloid to MPV
-* Modification: Replaced the default stock media player with mpv.
-* Justification: The default media player was removed and MPV was installed. MPV is a lightweight, efficient, and highly customizable open-source alternative that minimizes CPU and RAM resource consumption, with superior codec support ideal for systems administration environments.
+
+* Modification: The default media player Celluloid was removed and replaced by MPV.
+
+* Justification: MPV provides better codec support, lower resource consumption, and greater flexibility for advanced users and system administrators. It was selected as a lightweight and highly customizable open-source alternative.
 
 2. Pre-installation of Development Tools (Neovim)
+
 * Modification: Integrated and pre-installed the advanced text editing environment Neovim.
+
 * Justification: Neovim was incorporated directly into the base ISO along with its basic dependencies. This ensures that the system provides an agile, resource-efficient development editor ready for scripting and Unix administration tasks from the first boot without relying on external repositories.
 
 3. Persistent Customization of the Default User Environment via /etc/skel
+
 * Modification: Configured a persistent custom welcome banner within the command interpreter.
-* Justification: The master file '/etc/skel/.bashrc' was edited to add optimized global aliases ('ll') and a personalized welcome message in English. This guarantees that any new user account created automatically inherits these configurations persistently, establishing a distinct operating system identity for administrative auditing and direct developer recognition.
+
+* Justification: The master file '/etc/skel/.bashrc' was edited to add optimized global aliases ('ll') and a personalized welcome message in English. This guarantees that any new user account created automatically inherits these configurations persistently.
+
+4. Default Wallpaper Customization via gschema
+
+* Modification: Configured a custom wallpaper as the default desktop background.
+
+* Justification: The appropriate gschema settings were modified so that the custom wallpaper is applied automatically in new sessions, providing a unique visual identity for the distribution.
 
 ---
 
