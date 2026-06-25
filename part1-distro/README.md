@@ -38,3 +38,12 @@
 ## Deliverables and Verification
 * Demonstration Video: Included as UNIX.mp4 in the project directory https://drive.google.com/file/d/1wx6NPJzGhx_9C5vbWJREChPdSg4Tjf0O/view?usp=drive_link
 * Boot Test Status: Successfully verified and tested on Oracle VirtualBox, running perfectly in a clean Live session using the "Try Ubuntu" mode.
+
+## In sumarry
+* mpv was installed.
+
+* Neovim was installed (verified with the `nvim` command).
+
+* A default wallpaper was set (gschema).
+
+* A custom terminal welcome message was configured (/etc/skel/.bashrc).
