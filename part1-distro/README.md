@@ -1,45 +1,40 @@
-# Part 1: Custom Linux Mint ISO
+# Custom Linux Distribution Report — Part 1
 
-**Student:** Jose Martin  
-**Course:** UIDE 2026 — Integrative Project
+## General Information
+* Developer: PATIN COTACACHI RAFAEL ALEXANDRE
+* Base OS: Ubuntu 24.04.4 LTS (Noble Numbat)
+* Generation Date: 2026-06-25
 
-## What I did
+---
 
-I took Linux Mint 22.1 "Xia" Cinnamon 64-bit and modified it with 3 changes. Since I'm on a Mac with Apple Silicon, I couldn't use Cubic (needs GUI + Ubuntu), so I built the ISO using Docker with xorriso and squashfs-tools.
+## ISO Download and Verification
+* Download Link: https://drive.google.com/file/d/11HdAZHv6kOFGyHo4dCXdqz5MJmD_Q3Ri/view?usp=sharing
+* MD5 Checksum: dfa07646a501c0446620ca4fc4ceceaf
 
-The distro is called **CUBIC OS**.
+### Technical Specifications
+* File Name: ubuntu-24.04.4-2026.06.25-desktop-amd64.iso
+* Volume ID: Ubuntu 24.04.4 2026.06.25 LTS
+* Compression Algorithm: XZ (Optimized for size)
+* Final Size: 5.50 GiB (5,901,291,520 bytes)
 
-## The 3 modifications
+---
 
-1. **Dev tools** — neovim, htop, git, curl, build-essential. These are tools I actually use for class work, so it makes sense to have them pre-installed.
+## List of Modifications and Justifications
 
-2. **Shell aliases** — Added /etc/skel/.bash_aliases with shortcuts like `ll`, `nv` (for neovim), `gs`/`ga`/`gc` (git status/add/commit), and `update` (apt update + upgrade). New users get these automatically.
+1. Software Replacement: Celluloid to MPV
+* Modification: Replaced the default stock media player with mpv.
+* Justification: The default media player was removed and MPV was installed. MPV is a lightweight, efficient, and highly customizable open-source alternative that minimizes CPU and RAM resource consumption, with superior codec support ideal for systems administration environments.
 
-3. **Welcome banner** — Added a line in /etc/skel/.bashrc that prints "Bienvenido a CUBIC OS - UIDE 2026" when you open the terminal.
+2. Pre-installation of Development Tools (Neovim)
+* Modification: Integrated and pre-installed the advanced text editing environment Neovim.
+* Justification: Neovim was incorporated directly into the base ISO along with its basic dependencies. This ensures that the system provides an agile, resource-efficient development editor ready for scripting and Unix administration tasks from the first boot without relying on external repositories.
 
-I also set up a basic neovim config in /etc/skel/.config/nvim/ (line numbers, 4-space tabs, desert colorscheme).
+3. Persistent Customization of the Default User Environment via /etc/skel
+* Modification: Configured a persistent custom welcome banner within the command interpreter.
+* Justification: The master file '/etc/skel/.bashrc' was edited to add optimized global aliases ('ll') and a personalized welcome message in English. This guarantees that any new user account created automatically inherits these configurations persistently, establishing a distinct operating system identity for administrative auditing and direct developer recognition.
 
-## Verification
+---
 
-Instead of booting the full ISO (which is slow on ARM Macs because it has to emulate x86_64), I extracted the squashfs and ran the commands directly in a chroot. This confirmed everything is installed correctly.
-
-```
-neovim 0.9.5   git 2.43.0   htop 3.3.0   curl 8.5.0
-```
-
-## Checksum
-
-```
-SHA256: 9196effbaacf37c0442d4c76704890ba7b6a88ded860fa90bbfc28263edc4e72
-```
-
-## Boot
-
-The ISO boots with ISOLINUX for BIOS and GRUB for UEFI. During testing it booted correctly in UTM (showed GRUB menu then loaded the Cinnamon desktop).
-
-## Files
-
-- Dockerfile — sets up Ubuntu 24.04 with the tools needed to build ISOs
-- build-custom-iso.sh — the script that does everything: download ISO, extract, chroot, modify, repack
-- cubic-custom-22.1-cinnamon-64bit.iso — the final ISO (~2.6 GB, not on GitHub, build locally)
-- screenshots/ — GRUB boot, desktop, modifications proof
+## Deliverables and Verification
+* Demonstration Video: Included as UNIX.mp4 in the project directory https://drive.google.com/file/d/1wx6NPJzGhx_9C5vbWJREChPdSg4Tjf0O/view?usp=drive_link
+* Boot Test Status: Successfully verified and tested on Oracle VirtualBox, running perfectly in a clean Live session using the "Try Ubuntu" mode.
