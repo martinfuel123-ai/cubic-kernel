@@ -47,3 +47,5 @@
 * A default wallpaper was set (gschema).
 
 * A custom terminal welcome message was configured (/etc/skel/.bashrc).
+
+* The customization was made persistent through /etc/skel and gschema modifications.
