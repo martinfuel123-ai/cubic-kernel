@@ -3,7 +3,7 @@
 **Universidad Internacional del Ecuador (UIDE)**  
 **Instructor:** Ing. Jonathan E. Tito O., MSc.  
 **Term:** March – July 2026  
-**Student:** Jose Martin (Parts 1, 2 & 3)
+**Student:** Jose Martin (Part 2) and Rafael Patin (Parts 1 & 3)
 
 ---
 
@@ -15,19 +15,50 @@ This repo has the 3 parts of the Integrative Project:
 - **Part 2** — 64-bit x86 kernel that boots with GRUB and prints a banner
 - **Part 3** — Black Hat Bash offensive security lab with Nuclei scan
 
-Each part is in its own folder with its own README, code, screenshots, etc.
+Each part is in its own folder with its own README and screenshots.
 
 ---
 
-## Part 1 — Custom Distro
+# Custom Linux Distribution Report — Part 1
 
-I built a custom Linux Mint 22.1 ISO without using Cubic (no GUI available on my Mac). Instead I used a Docker container with xorriso and squashfs-tools to:
+## General Information
+* Developer: PATIN COTACACHI RAFAEL ALEXANDRE
+* Base OS: Ubuntu 24.04.4 LTS (Noble Numbat)
+* Generation Date: 2026-06-25
 
-1. Install neovim, htop, git, curl, build-essential
-2. Add useful aliases to /etc/skel/.bash_aliases (ll, nv, gs, etc.)
-3. Add a welcome banner that prints "Bienvenido a CUBIC OS - UIDE 2026"
+---
 
-More details in `part1-distro/README.md`.
+## ISO Download and Verification
+* Download Link: https://drive.google.com/file/d/11HdAZHv6kOFGyHo4dCXdqz5MJmD_Q3Ri/view?usp=sharing
+* MD5 Checksum: dfa07646a501c0446620ca4fc4ceceaf
+
+### Technical Specifications
+* File Name: ubuntu-24.04.4-2026.06.25-desktop-amd64.iso
+* Volume ID: Ubuntu 24.04.4 2026.06.25 LTS
+* Compression Algorithm: XZ (Optimized for size)
+* Final Size: 5.50 GiB (5,901,291,520 bytes)
+
+---
+
+## List of Modifications and Justifications
+
+1. Software Replacement: Celluloid to MPV
+* Modification: Replaced the default stock media player with mpv.
+* Justification: The default media player was removed and MPV was installed. MPV is a lightweight, efficient, and highly customizable open-source alternative that minimizes CPU and RAM resource consumption, with superior codec support ideal for systems administration environments.
+
+2. Pre-installation of Development Tools (Neovim)
+* Modification: Integrated and pre-installed the advanced text editing environment Neovim.
+* Justification: Neovim was incorporated directly into the base ISO along with its basic dependencies. This ensures that the system provides an agile, resource-efficient development editor ready for scripting and Unix administration tasks from the first boot without relying on external repositories.
+
+3. Persistent Customization of the Default User Environment via /etc/skel
+* Modification: Configured a persistent custom welcome banner within the command interpreter.
+* Justification: The master file '/etc/skel/.bashrc' was edited to add optimized global aliases ('ll') and a personalized welcome message in English. This guarantees that any new user account created automatically inherits these configurations persistently, establishing a distinct operating system identity for administrative auditing and direct developer recognition.
+
+---
+
+## Deliverables and Verification
+* Demonstration Video: Included as UNIX.mp4 in the project directory https://drive.google.com/file/d/1wx6NPJzGhx_9C5vbWJREChPdSg4Tjf0O/view?usp=drive_link
+* Boot Test Status: Successfully verified and tested on Oracle VirtualBox, running perfectly in a clean Live session using the "Try Ubuntu" mode.
 
 ---
 
